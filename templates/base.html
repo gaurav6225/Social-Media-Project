@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>Social Network</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -16,11 +17,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="{% static 'mysite/css/master.css'%}">
+    <link rel="stylesheet" href="{% static "css/master.css" %}" crossorigin="anonymous">
 
 
      </head>
-  <body >
+
+
+  <body>
 
       <nav class="navbar mynav" role="navigation" id="navbar">
         <div class="container">
@@ -46,5 +49,8 @@
        {% endblock %}
      </div>
 
+<canvas id="canvas"></canvas>
+
   </body>
+  <script src="{% static "mysite/js/master.js"%}" type="text/javascript" ></script>
 </html>
